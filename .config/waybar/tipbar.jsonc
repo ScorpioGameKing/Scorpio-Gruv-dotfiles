@@ -1,0 +1,20 @@
+    // Botom Bar
+    {
+        // General Settings 
+        "output": ["DP-1", "eDP-2"],
+        "height": 30, 
+        "spacing": 4, 
+        "reload_style_on_change": true,
+        "gtk-layer-shell": true,
+        "position": "bottom",
+        "mode": "dock",
+
+        "modules-center": [
+            "custom/binder" 
+        ],
+
+        "custom/binder": {
+            "format": "KEY BINDS HERE"
+        }
+    }
+

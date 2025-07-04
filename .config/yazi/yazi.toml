@@ -1,0 +1,31 @@
+[manager]
+show_hidden = true
+ratio = [1, 4, 3]
+sort_by = "alphabetical"
+sort_dir_first = true
+linemode = "size"
+
+[preview]
+wrap = "yes"
+
+[opener]
+play = [
+	{ run = 'mpv "$@"', orphan = true, for = "unix" },
+]
+listen = [
+	{ run = 'rmpc add "$@"', orphan = true, for = "unix" },
+]
+view = [
+	{ run = 'nsxiv "$@"', orphan = true, for = "unix" },
+]
+edit = [
+	{ run = 'nvim "$@"', block = true, for = "unix" },
+]
+open = [
+	{ run = 'xdg-open "$@"', desc = "Open" },
+]
+
+[open]
+prepend_rules = [
+	{ mime = "audio/mpeg", use = "listen" },
+]

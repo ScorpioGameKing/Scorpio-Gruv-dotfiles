@@ -1,0 +1,88 @@
+/* WiFi menu */
+
+@theme "~/.config/rofi/theme.rasi"
+
+configuration {
+  font:                     "JetBrainsMono Nerd Font 8";
+  hover-select:             true;
+  me-select-entry:          "MousePrimary";
+  me-accept-entry:          "!MousePrimary";
+}
+
+/* Window */
+
+window {
+  location:                 northeast;
+  anchor:                   south;
+  y-offset:                 2px;
+  width:                    240px;
+  border:                   2px;
+  border-radius:            5px;
+  border-color:             @blue;
+  background-color:         @blue;
+  children:                 [ mainbox ];
+}
+
+mainbox {
+  spacing:                  0;
+  background-color:         @main-br;
+  text-color:               @main-fg;
+  children:                 [ listview, inputbar ];
+}
+
+/* Input */
+
+inputbar {
+  margin:                   -32px 6px 6px;
+  border-radius:            5px;
+  spacing:                  inherit;
+  background-color:         @input-bg;
+  text-color:               inherit;
+  children:                 [ prompt, entry ];
+}
+prompt {
+  padding:                  6px 6px 6px 12px;
+  background-color:         inherit;
+  text-color:               inherit;
+}
+entry {
+  placeholder:              "Search";
+  padding:                  6px 0;
+  cursor:                   text;
+  background-color:         inherit;
+  text-color:               inherit;
+}
+
+/* List */
+
+listview {
+  border:                   0 0 0 0;
+  border-radius:            5px;
+  border-color:             @blue;
+  lines:                    6;
+  fixed-height:             false;
+  dynamic:                  false;
+  cycle:                    false;
+  margin:                   0 0 -2px;
+  padding:                  6px 6px 40px;
+  background-color:         @main-bg;
+}
+
+element {
+  padding:                  6px;
+  cursor:                   pointer;
+  background-color:         inherit;
+  text-color:               @main-fg;
+}
+element selected active,
+element selected normal {
+  border-radius:            6px;
+  background-color:         @blue;
+  text-color:               @select-fg;
+}
+element-text {
+  padding:                  0 6px;
+  cursor:                   inherit;
+  background-color:         inherit;
+  text-color:               inherit;
+}
