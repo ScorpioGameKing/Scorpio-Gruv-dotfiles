@@ -58,7 +58,27 @@ with me.
 ![Working Preview 1](https://github.com/ScorpioGameKing/Scorpio-Gruv-dotfiles/blob/master/assets/images/workspace-preview-1.png)
 ![Working Preview 2](https://github.com/ScorpioGameKing/Scorpio-Gruv-dotfiles/blob/master/assets/images/workspace-preview-2.png)
 
-# General Guide 
+# Install Guides 
+
+## Dot🧲Magnet Installation
+
+> Please Note that Dot🧲Magnet is WIP and may not operate as desired
+
+> [Dotmagnet Github Repository](https://github.com/ScorpioGameKing/dotmagnet)
+
+You can easily install my setup by using Dot🧲Magnet. Dot🧲Magnet is a simple to use "BYOIS" Manager (Bring Your Own Install
+Script) that let's us stage our installation steps easily. To install with Dot🧲Magnet run the following commands:
+
+```sh
+git clone https://github.com/ScorpioGameKing/dotmagnet
+cd dotmagnet
+./install install
+```
+
+After running `./install.sh install` simply follow the prompts, a majority of the installation is automated with the
+occasional password prompt.
+
+## Manual Installation
 
 This is NOT a perfect install guide. Your mileage may vary. With that being said I'll try to provide a rough, general 
 setup process from headless to rice that should get us most of the way.
